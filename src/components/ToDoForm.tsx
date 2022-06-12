@@ -4,11 +4,11 @@ const ToDoForm = ({ addTask }) => {
 
     const [ userInput, setUserInput ] = useState('');
 
-    const handleChange = (e) => {
+    const handleChange = (e: any) => {
         setUserInput(e.currentTarget.value)
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault();
         addTask(userInput);
         setUserInput("");
